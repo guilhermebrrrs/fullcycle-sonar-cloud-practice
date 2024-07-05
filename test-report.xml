@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="C:\Users\Guilherme\VSCodeProjects\fullcycle-sonar-cloud-practice\src\index.test.ts">
-    <testCase name="Add function" duration="2"/>
+    <testCase name="Add function" duration="1"/>
     <testCase name="Divide function" duration="0"/>
     <testCase name="Factorial function" duration="0"/>
     <testCase name="Power funciton" duration="0"/>
