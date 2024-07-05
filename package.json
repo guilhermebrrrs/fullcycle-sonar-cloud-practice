@@ -5,7 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "commit": "cz",
-    "tests": "jest --coverage --testResultsProcessor=jest-sonar-reporter --config ./jest.config.ts",
+    "tests": "jest --config ./jest.config.ts --coverage --testResultsProcessor=jest-sonar-reporter ",
     "build": "tsc",
     "dev:ts": "tsc --noEmit && node --loader ts-node/esm ./src/index.ts",
     "dev:node": "node --enable-source-maps ./dist/src/index.js",
