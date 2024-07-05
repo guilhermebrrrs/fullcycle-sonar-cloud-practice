@@ -1,0 +1,40 @@
+{
+  "name": "fullcycle-sonar-cloud-practice",
+  "version": "1.0.0",
+  "description": "Projeto para iniciar nas práticas de CI com GitHub Actions",
+  "main": "src/index.ts",
+  "scripts": {
+    "commit": "cz",
+    "tests": "jest --coverage --config ./jest.config.ts",
+    "build": "tsc",
+    "dev:ts": "tsc --noEmit && node --loader ts-node/esm ./src/index.ts",
+    "dev:node": "node --enable-source-maps ./dist/src/index.js",
+    "test:sonar-scanner": "npm run tests & sonar-scanner"
+  },
+  "author": "Guilherme Barra Orsi",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.7",
+    "cz-conventional-changelog": "^3.3.0",
+    "jest": "^29.7.0",
+    "jest-cli": "^29.7.0",
+    "sonar-scanner": "^3.1.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "html"
+    ]
+  },
+  "dependencies": {}
+}
