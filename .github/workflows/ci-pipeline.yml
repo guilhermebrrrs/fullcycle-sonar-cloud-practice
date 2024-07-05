@@ -1,4 +1,4 @@
-name: ci-pepiline
+name: ci-pipeline
 on:
   push:
     branches:
