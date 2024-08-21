@@ -5,6 +5,6 @@
     <testCase name="divide function" duration="0"/>
     <testCase name="factorial function" duration="0"/>
     <testCase name="power function" duration="0"/>
-    <testCase name="isPrime function" duration="20"/>
+    <testCase name="isPrime function" duration="22"/>
   </file>
 </testExecutions>
