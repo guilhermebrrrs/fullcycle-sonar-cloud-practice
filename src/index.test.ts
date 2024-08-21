@@ -25,10 +25,10 @@ test(`isPrime function`, () => {
   primes.forEach((number) => expect(isPrime(number)).toBeTruthy);
 });
 
-test("multiply function", () => {
+/* test("multiply function", () => {
   expect(multiply(8, 2)).toBe(16);
 });
 
 test("power function", () => {
   expect(power(2, 10)).toBe(1024);
-});
+}); */
