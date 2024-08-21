@@ -17,12 +17,6 @@ test("power function", () => {
   expect(power(2, 10)).toBe(1024);
 });
 
-/* describe.each(primes)("isPrime function", (number: number) => {
-  test(`is ${number} a prime number`, () => {
-    expect(isPrime(number)).toBeTruthy;
-  });
-}); */
-
 test(`isPrime function`, () => {
-  primes.forEach(number => expect(isPrime(number)).toBeTruthy)
+  primes.forEach((number) => expect(isPrime(number)).toBeTruthy);
 });
