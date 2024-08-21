@@ -10,17 +10,13 @@ const factorial = (n: number): number => {
   return n * (n === 1 ? 1 : factorial(n - 1));
 };
 
-const multiply = (a: number, b: number): number => {
-  return a * b;
-};
+const multiply = (a: number, b: number): number => a * b;
 
 const power = (base: number, exponent: number): number => {
   return base ** exponent;
 };
 
-const subtract = (a: number, b: number): number => {
-  return a - b;
-};
+const subtract = (a: number, b: number): number => a - b;
 
 const isPrime = (n: number): boolean => {
   if (n === 2 || n % 2 === 0) return false;
