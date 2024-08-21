@@ -9,11 +9,11 @@ import {
 } from "./functions";
 import { primes } from "./utils";
 
-/* test("add function", () => {
+test("add function", () => {
   expect(add(1000, 1)).toBe(1001);
 });
 
-test("divide function", () => {
+/* test("divide function", () => {
   expect(divide(25, 2)).toBe(12.5);
 });
 
@@ -31,4 +31,5 @@ test("multiply function", () => {
 
 test("power function", () => {
   expect(power(2, 10)).toBe(1024);
-}); */
+});
+ */
