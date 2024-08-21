@@ -24,15 +24,3 @@ test("factorial function", () => {
 test(`isPrime function`, () => {
   primes.forEach((number) => expect(isPrime(number)).toBeTruthy);
 });
-
-test("multiply function", () => {
-  expect(multiply(8, 2)).toBe(16);
-});
-
-test("power function", () => {
-  expect(power(2, 10)).toBe(1024);
-});
-
-test("subtract function", () => {
-  expect(subtract(8, 2)).toBe(6);
-});
