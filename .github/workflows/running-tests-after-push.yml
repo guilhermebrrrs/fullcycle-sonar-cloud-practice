@@ -4,6 +4,9 @@ on:
     branches-ignore:
       - main
       - development
+  pull_request: 
+    branches-ignore:
+      - '**'
 jobs:
   running-tests:
     name: Running Tests
