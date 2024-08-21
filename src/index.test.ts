@@ -1,4 +1,4 @@
-import { add, divide, factorial, isPrime, multiply, power, subtract } from ".";
+import { add, divide, factorial, isPrime, multiply, power, subtract } from "./functions";
 import { primes } from "./utils";
 
 test("add function", () => {
