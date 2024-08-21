@@ -6,7 +6,7 @@ const divide = (a: number, b: number): number => {
   return a / b;
 };
 
-/* const factorial = (n: number): number => {
+const factorial = (n: number): number => {
   return n * (n === 1 ? 1 : factorial(n - 1));
 };
 
@@ -25,10 +25,10 @@ const multiply = (a: number, b: number): number => {
 
 const power = (base: number, exponent: number): number => {
   return base ** exponent;
-}; */
+};
 
 const subtract = (a: number, b: number): number => {
   return a - b;
 };
 
-export { add, divide, /* factorial, isPrime, multiply, power, */ subtract };
+export { add, divide, subtract };
