@@ -1,12 +1,8 @@
 name: running-tests-after-push
 on:
   push:
-    branches-ignore:
-      - main
-      - development
-  pull_request: 
-    branches-ignore:
-      - '**'
+    branches:
+      - "feature/**"
 jobs:
   running-tests:
     name: Running Tests
