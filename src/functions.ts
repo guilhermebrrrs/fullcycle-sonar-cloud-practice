@@ -31,4 +31,4 @@ const subtract = (a: number, b: number): number => {
   return a - b;
 };
 
-export { add, divide, subtract };
+export { add, divide, factorial, isPrime, multiply, power, subtract };
