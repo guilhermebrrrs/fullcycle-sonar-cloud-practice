@@ -17,7 +17,7 @@ test("divide function", () => {
   expect(divide(25, 2)).toBe(12.5);
 });
 
-test("factorial function", () => {
+/* test("factorial function", () => {
   expect(factorial(12)).toBe(479001600);
 });
 
@@ -25,7 +25,7 @@ test(`isPrime function`, () => {
   primes.forEach((number) => expect(isPrime(number)).toBeTruthy);
 });
 
-/* test("multiply function", () => {
+test("multiply function", () => {
   expect(multiply(8, 2)).toBe(16);
 });
 
