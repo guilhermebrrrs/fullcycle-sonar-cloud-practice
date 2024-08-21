@@ -22,4 +22,13 @@ const subtract = (a: number, b: number): number => {
   return a - b;
 };
 
-export { add, divide, factorial, multiply, power, subtract };
+const isPrime = (n: number): boolean => {
+  if (n === 2 || n % 2 === 0) return false;
+  if (n === 3 || n % 3 === 0) return false;
+  if (n === 5 || n % 5 === 0) return false;
+  if (n === 7 || n % 7 === 0) return false;
+
+  return true;
+};
+
+export { add, divide, factorial, isPrime, multiply, power, subtract };

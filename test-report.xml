@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="C:\Users\Guilherme\VSCodeProjects\fullcycle-sonar-cloud-practice\src\index.test.ts">
-    <testCase name="Add function" duration="1"/>
-    <testCase name="Divide function" duration="0"/>
-    <testCase name="Factorial function" duration="1"/>
-    <testCase name="Power funciton" duration="0"/>
+    <testCase name="add function" duration="3"/>
+    <testCase name="divide function" duration="0"/>
+    <testCase name="factorial function" duration="0"/>
+    <testCase name="power function" duration="0"/>
+    <testCase name="isPrime function" duration="20"/>
   </file>
 </testExecutions>
