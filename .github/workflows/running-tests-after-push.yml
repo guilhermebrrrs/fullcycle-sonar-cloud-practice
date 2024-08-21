@@ -3,6 +3,10 @@ on:
   push:
     branches:
       - "feature/**"
+  pull_request:
+    branches-ignore:
+      - development
+      - main
 jobs:
   running-tests:
     name: Running Tests
