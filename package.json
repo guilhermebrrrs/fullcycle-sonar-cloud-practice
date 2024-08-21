@@ -5,11 +5,10 @@
   "main": "src/index.ts",
   "scripts": {
     "commit": "cz",
-    "tests": "jest --coverage --config ./jest.config.ts",
+    "tests": "jest --config ./jest.config.ts --coverage --testResultsProcessor=jest-sonar-reporter ",
     "build": "tsc",
     "dev:ts": "tsc --noEmit && node --loader ts-node/esm ./src/index.ts",
-    "dev:node": "node --enable-source-maps ./dist/src/index.js",
-    "test:sonar-scanner": "npm run tests & sonar-scanner"
+    "dev:node": "node --enable-source-maps ./dist/src/index.js"
   },
   "author": "Guilherme Barra Orsi",
   "license": "ISC",
@@ -19,6 +18,7 @@
     "cz-conventional-changelog": "^3.3.0",
     "jest": "^29.7.0",
     "jest-cli": "^29.7.0",
+    "jest-sonar-reporter": "^2.0.0",
     "sonar-scanner": "^3.1.0",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
@@ -35,6 +35,5 @@
       "json",
       "html"
     ]
-  },
-  "dependencies": {}
+  }
 }

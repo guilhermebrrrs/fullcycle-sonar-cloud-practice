@@ -1,13 +1,22 @@
-import { add, divide, factorial } from ".";
+import { add, divide, factorial, isPrime, multiply, power, subtract } from "./functions";
+import { primes } from "./utils";
 
-test("Add function", () => {
+test("add function", () => {
   expect(add(1000, 1)).toBe(1001);
 });
 
-test("Divide function", () => {
+test("divide function", () => {
   expect(divide(25, 2)).toBe(12.5);
 });
 
-test("Factorial function", () => {
+test("factorial function", () => {
   expect(factorial(12)).toBe(479001600);
+});
+
+test("power function", () => {
+  expect(power(2, 10)).toBe(1024);
+});
+
+test(`isPrime function`, () => {
+  primes.forEach((number) => expect(isPrime(number)).toBeTruthy);
 });

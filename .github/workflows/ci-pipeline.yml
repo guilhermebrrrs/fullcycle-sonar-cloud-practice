@@ -1,0 +1,30 @@
+name: ci-pipeline
+on:
+  push:
+    branches:
+      - development
+  pull_request:
+    types: [opened, synchronize, reopened]
+jobs:
+  run-tests:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use NodeJS V18.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18.x
+      - run: npm install
+      - run: npm run tests
+  sonar-check:
+    name: Sonar Cloud Check
+    needs: run-tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.REPOSITORY_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

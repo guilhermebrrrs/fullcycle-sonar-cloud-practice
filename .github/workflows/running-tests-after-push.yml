@@ -1,13 +1,11 @@
-name: run-tests
-
+name: running-tests-after-push
 on:
   push:
-    branches-ignore:
-      - development
-      - main
-
+    branches:
+      - "feature/**"
 jobs:
-  run-tests:
+  running-tests:
+    name: Running Tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
