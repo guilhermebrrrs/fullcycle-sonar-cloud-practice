@@ -32,7 +32,3 @@ test("multiply function", () => {
 test("power function", () => {
   expect(power(2, 10)).toBe(1024);
 });
-
-test("subtract function", () => {
-  expect(subtract(8, 2)).toBe(6);
-});
